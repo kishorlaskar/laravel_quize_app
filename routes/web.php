@@ -18,4 +18,6 @@ Route::get('/', function () {
 });
 
 Route::resource('question','QuestionController');
+Route::get('/quiz','MainController@startquize')->name('quiz');
+Route::get('/submitans','MainController@submitans')->name('submitans');
 
